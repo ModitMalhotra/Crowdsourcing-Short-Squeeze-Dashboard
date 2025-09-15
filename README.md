@@ -4,23 +4,23 @@ Stock data is extracted via the Yahoo Finance API (yfinance), while quarterly re
 The data is then cleaned and visualized using interactive Plotly dashboards, allowing side-by-side comparison of financial fundamentals vs. market behavior.
 
 # Tech Stack
- Python
- pandas – data wrangling & cleaning
- yfinance – stock price extraction
- requests & BeautifulSoup – revenue web scraping
- plotly – interactive dashboards
- Jupyter Notebook – development & visualization
+1. Python
+2. pandas – data wrangling & cleaning
+3. yfinance – stock price extraction
+4. requests & BeautifulSoup – revenue web scraping
+5. plotly – interactive dashboards
+6. Jupyter Notebook – development & visualization
 
 # Features
- Extracts historical stock data from Yahoo Finance.
- Scrapes quarterly revenue data from Macrotrends.
- Cleans financial data for consistency (removing symbols, formatting).
- Builds dual-axis Plotly dashboards:
- Left Y-axis → Stock Price
- Right Y-axis → Quarterly Revenue
- Case study: Tesla vs GameStop
+1. Extracts historical stock data from Yahoo Finance.
+2. Scrapes quarterly revenue data from Macrotrends.
+3. Cleans financial data for consistency (removing symbols, formatting).
+4. Builds dual-axis Plotly dashboards:
+5. Left Y-axis → Stock Price
+6. Right Y-axis → Quarterly Revenue
+7. Case study: Tesla vs GameStop
 
 # Future Improvements
- Add support for any stock ticker input.
- Include more financial metrics (Net Income, EPS, Cash Flow).
- Deploy as a Streamlit/Dash web app.
+1. Add support for any stock ticker input.
+2. Include more financial metrics (Net Income, EPS, Cash Flow).
+3. Deploy as a Streamlit/Dash web app.
