@@ -3,6 +3,7 @@ import yfinance as yf
 import pandas as pd
 import plotly.graph_objs as go
 import requests
+from datetime import datetime
 
 # ********************FUNCTIONS********************
 
@@ -97,11 +98,11 @@ def plot_netprofit(netprofit, ticker):
 
 # ********************UI********************
 
-st.tilte("CROWDSOURCING SHORT SQUEEZE DASHBOARD")
+st.title("CROWDSOURCING SHORT SQUEEZE DASHBOARD")
 
 ticker = st.sidebar.text_input("Enetr Stock Ticker (eg. TSLA, AAPL, GME): ").upper()
-start = st.sidebar.date_input("Start Date", pd.to_datetime("2010-01-01"))
-end = st.sidebar.date_input("End Date", pd.to_datetime("Today"))
+start = st.sidebar.date_input("Start Date: ", datetime(2010, 1, 1))
+end = st.sidebar.date_input("End Date: ", datetime.today())
 
 if st.sidebar.button("Generate Report"):
     try:
