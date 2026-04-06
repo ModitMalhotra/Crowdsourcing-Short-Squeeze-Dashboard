@@ -135,7 +135,14 @@ def correlation(stock_data, revenue_data):
         return None
 
     stock_indexed = stock_data.set_index("Date")
-    quarterly_stock = stock_indexed["Stock Price"].resample("Q").mean().reset_index()
+    try:
+        quarterly_stock = (
+            stock_indexed["Stock Price"].resample("QE").mean().reset_index()
+        )
+    except ValueError:
+        quarterly_stock = (
+            stock_indexed["Stock Price"].resample("Q").mean().reset_index()
+        )
     quarterly_stock.columns = ["Date", "Stock Price"]
 
     revenue_data["Quarter"] = pd.to_datetime(revenue_data["Date"]).dt.to_period("Q")
