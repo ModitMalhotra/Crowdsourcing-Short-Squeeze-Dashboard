@@ -1,26 +1,30 @@
 # Stock Fundamentals Dashboard
-This project analyzes the relationship between stock prices and company revenue using two well-known companies: Tesla (TSLA) and GameStop (GME).
-Stock data is extracted via the Yahoo Finance API (yfinance), while quarterly revenue data is obtained via web scraping (Macrotrends).
-The data is then cleaned and visualized using interactive Plotly dashboards, allowing side-by-side comparison of financial fundamentals vs. market behavior.
+An interactive dashboard built using Python and Streamlit to analyze stock performance alongside company fundamentals such as revenue and profit margins.
+The app allows users to explore stock trends, compare companies, and generate key insights from financial data.
 
 # Tech Stack
 1. Python
 2. pandas – data wrangling & cleaning
 3. yfinance – stock price extraction
-4. requests & BeautifulSoup – revenue web scraping
+4. streamlit
 5. plotly – interactive dashboards
-6. Jupyter Notebook – development & visualization
 
 # Features
-1. Extracts historical stock data from Yahoo Finance.
-2. Scrapes quarterly revenue data from Macrotrends.
-3. Cleans financial data for consistency (removing symbols, formatting).
-4. Builds dual-axis Plotly dashboards:
-5. Left Y-axis → Stock Price
-6. Right Y-axis → Quarterly Revenue
-7. Case study: Tesla vs GameStop
+1. Visualize stock price trends with 50-day and 200-day moving averages
+2. Analyze quarterly revenue and profit margins
+3. Compare two stocks using normalized performance
+4. Compute key metrics:
+    Returns
+    Volatility
+    Revenue growth
+    Price–revenue correlation
+5. Auto-generated insights summarizing stock behavior
+
+# Use Cases
+1. Analyze how the stock price relates to the company's revenue
+2. Compare the performance between the companies
+3. Identify volatility and growth trends
 
 # Future Improvements
-1. Add support for any stock ticker input.
-2. Include more financial metrics (Net Income, EPS, Cash Flow).
-3. Deploy as a Streamlit/Dash web app.
+1. Include more financial metrics (EPS, Cash Flow).
+2. Improve UI/UX
