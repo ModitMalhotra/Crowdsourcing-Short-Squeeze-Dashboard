@@ -293,7 +293,7 @@ def plot_comparison(stock_data_1, stock_data_2, ticker1, ticker2):
 
 # UI
 
-st.title("Stock Fundamentals Dashboard")
+st.title("Stock Insights Dashboard")
 
 ticker = st.sidebar.text_input("Enter Stock Ticker (e.g. TSLA, AAPL, GME):").upper()
 ticker2 = st.sidebar.text_input("Compare with (optional second ticker):").upper()
