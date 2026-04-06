@@ -1,4 +1,4 @@
-# Stock Fundamentals Dashboard
+# Stock Insights Dashboard
 An interactive dashboard built using Python and Streamlit to analyze stock performance alongside company fundamentals such as revenue and profit margins.
 The app allows users to explore stock trends, compare companies, and generate key insights from financial data.
 
